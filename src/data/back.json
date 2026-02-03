@@ -1,0 +1,17 @@
+{
+  "tec1": {
+    "key": 1,
+    "tecnologia": "NodeJS",
+    "img": "https://cp.beget.com/shared/MALLmyMEwExJH2Xo3cFqrxq2iFC_twCk/logo_nodejs.png"
+  },
+  "tec2": {
+    "key": 2,
+    "tecnologia": "MySQL",
+    "img": "https://pngimg.com/uploads/mysql/small/mysql_PNG11.png"
+  },
+  "te3c": {
+    "key": 3,
+    "tecnologia": "PostgreSQL",
+    "img": "https://cdn.freebiesupply.com/logos/large/2x/postgresql-logo-png-transparent.png"
+  }
+}
