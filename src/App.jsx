@@ -77,7 +77,7 @@ function App() {
           <h3>Ascenso Real (TFG)</h3>
           <p>
             Juego en el que un Peón quiere llegar a ser algo más que un simple
-            peón, teniendo que superar diferentes pruebas que les ponen otras
+            peón, teniendo que superar diferentes pruebas que le ponen otras
             piezas.
           </p>
           <div className="links">
@@ -88,7 +88,7 @@ function App() {
             </p>
             <p>
               <a href="https://github.com/TFG-DAM-G1/back.git">
-                Haga click para ver el repositorio del backebd
+                Haga click para ver el repositorio del backend
               </a>
             </p>
           </div>
@@ -96,8 +96,8 @@ function App() {
         <article>
           <h3>Dashboard del Titanic</h3>
           <p>
-            Es un dashboard del Titanic que muestra los sobrevivientes y los
-            murtos que hubo con animaciones.
+            Es un dashboard del Titanic que muestra los supervivientes y los
+            fallecidos que hubo, con animaciones.
           </p>
           <div className="links">
             <p>
