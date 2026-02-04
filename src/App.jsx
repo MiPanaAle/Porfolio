@@ -74,7 +74,8 @@ function App() {
       <section className="section">
         <h2 className="titulo">Proyectos</h2>
         <article>
-          <h3>Ascenso Real (TFG)</h3>
+          <h3>Ascenso Real (TFG) </h3>
+          <p className="little">SIN TERMINAR</p>
           <p>
             Juego en el que un Peón quiere llegar a ser algo más que un simple
             peón, teniendo que superar diferentes pruebas que le ponen otras
