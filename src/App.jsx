@@ -82,9 +82,10 @@ function App() {
             return (
               <div className="proyecto" key={key}>
                 <h3>{name}</h3>
-                <p className="estado">
-                  <h4>Estado:</h4> {estado}
-                </p>
+                <div className="estado">
+                  <h4>Estado:</h4> 
+                  <p>{estado}</p>
+                </div>
 
                 <div className="tecnologias">
                   <h4>Tecnologías:</h4>
