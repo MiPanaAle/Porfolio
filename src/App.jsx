@@ -1,11 +1,13 @@
 import React from "react";
 import dataFront from "./data/front.json";
 import dataBack from "./data/back.json";
+import dataProyects from "./data/projects.json";
 import "./App.css";
 
 function App() {
   const front = Object.values(dataFront);
   const back = Object.values(dataBack);
+  const proyectos = Object.values(dataProyects);
 
   return (
     <>
@@ -72,65 +74,62 @@ function App() {
       </section>
 
       <section className="section">
-        <h2 className="titulo">Proyectos</h2>
-        <article>
-          <h3>Ascenso Real (TFG) </h3>
-          <p className="little">SIN TERMINAR</p>
-          <p>
-            Juego en el que un Peón quiere llegar a ser algo más que un simple
-            peón, teniendo que superar diferentes pruebas que le ponen otras
-            piezas.
-          </p>
-          <div className="links">
-            <p>
-              <a href="https://github.com/TFG-DAM-G1/front.git">
-                Haga click para ver el repositorio del frontend
-              </a>
-            </p>
-            <p>
-              <a href="https://github.com/TFG-DAM-G1/back.git">
-                Haga click para ver el repositorio del backend
-              </a>
-            </p>
-          </div>
-        </article>
-        <article>
-          <h3>Dashboard del Titanic</h3>
-          <p>
-            Es un dashboard del Titanic que muestra los supervivientes y los
-            fallecidos que hubo, con animaciones.
-          </p>
-          <div className="links">
-            <p>
-              <a href="https://github.com/MiPanaAle/Dashboard-Titanic-React.git">
-                Haga click para ver el repositorio
-              </a>
-            </p>
-            <p>
-              <a href="https://dashboard-titanic-react-iei5.vercel.app/">
-                Haga click para ver el despliegue del proyecto
-              </a>
-            </p>
-          </div>
-        </article>
-        <article>
-          <h3>Tienda de cómics (intermodular)</h3>
-          <p>
-            Tienda en la que se puede comprar, vender e intercambiar cómics.
-          </p>
-          <div className="links">
-            <p>
-              <a href="https://github.com/Proyecto-DAW-Segundo-Curso/tienda-de-comics.git">
-                Haga click para ver el repositorio del frontend
-              </a>
-            </p>
-            <p>
-              <a href="https://github.com/Proyecto-DAW-Segundo-Curso/tienda-de-comics-bbdd.git">
-                Haga click para ver el repositorio del backend
-              </a>
-            </p>
-          </div>
-        </article>
+        <h2 className="proyectos">Proyectos</h2>
+        <div className="contenedorProyectos">
+          {proyectos.map(({ key, name, estado, tecnology, about, links }) => {
+            const linkEntries = Object.entries(links || {});
+
+            return (
+              <div className="proyecto" key={key}>
+                <h3>{name}</h3>
+                <p className="estado">
+                  <h4>Estado:</h4> {estado}
+                </p>
+
+                <div className="tecnologias">
+                  <h4>Tecnologías:</h4>
+                  <div className="tecnologias-lista">
+                    <p>
+                      <strong>Frontend: </strong>
+                      {tecnology.front.join(", ")}
+                    </p>
+                    {tecnology.back && tecnology.back.length ? (
+                      <p>
+                        <strong>Backend: </strong>
+                        {tecnology.back.join(", ")}
+                      </p>
+                    ) : (
+                      <p />
+                    )}
+                  </div>
+                </div>
+
+                <div className="descripcion">
+                  <h4>Descripción:</h4>
+                  <p className="textDescript">{about}</p>
+                </div>
+
+                {linkEntries.length > 0 && (
+                  <div className="enlaces">
+                    {linkEntries.map(([tipo, url]) => (
+                      <a
+                        key={tipo}
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="enlace"
+                      >
+                        {tipo === "front" && "Frontend"}
+                        {tipo === "back" && "Backend"}
+                        {tipo === "demo" && "Demo"}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </section>
 
       <footer>

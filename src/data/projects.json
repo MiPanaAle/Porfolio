@@ -1,0 +1,43 @@
+{
+  "proyect1": {
+    "key": 1,
+    "name": "Ascenso Real (TFG)",
+    "estado": "En proceso",
+    "tecnology": {
+      "front": ["React", "Kotlin"],
+      "back": ["NodeJS + Express"]
+    },
+    "about": "Juego en el que un Peón quiere llegar a ser algo más que un simple peón, teniendo que superar diferentes pruebas que le ponen otras piezas.",
+    "links": {
+      "front": "https://github.com/TFG-DAM-G1/front.git",
+      "back": "https://github.com/TFG-DAM-G1/back.git"
+    }
+  },
+  "proyect2": {
+    "key": 2,
+    "name": "Dashboard del Titanic",
+    "estado": "Desplegado",
+    "tecnology": {
+      "front": ["React"]
+    },
+    "about": "Es un dashboard del Titanic que muestra los supervivientes y los fallecidos que hubo, con animaciones.",
+    "links": {
+      "front": "https://github.com/MiPanaAle/Dashboard-Titanic-React.git",
+      "demo": "https://dashboard-titanic-react-iei5.vercel.app/"
+    }
+  },
+  "proyect3": {
+    "key": 3,
+    "name": "Tienda de cómics",
+    "estado": "Terminado con implementaciones futuras",
+    "tecnology": {
+      "front": ["React"],
+      "back": ["NodeJS + Express"]
+    },
+    "about": "Tienda en la que se puede comprar, vender e intercambiar cómics.",
+    "links": {
+      "front": "https://github.com/Proyecto-DAW-Segundo-Curso/tienda-de-comics.git",
+      "back": "https://github.com/Proyecto-DAW-Segundo-Curso/tienda-de-comics-bbdd.git"
+    }
+  }
+}
