@@ -141,13 +141,13 @@ article {
 
   .descripcion .textDescript {
     text-align: justify;
-    height: 4em;
   }
 
   .enlaces {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 5px;
 
 
     a {
