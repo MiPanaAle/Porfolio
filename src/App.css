@@ -116,13 +116,11 @@ article {
 
   h3 {
     margin-bottom: 5px;
-    height: 1.5em;
   }
 
   .estado {
     align-items: center;
     justify-content: center;
-    height: 2.5em;  
   }
 
   .tecnologias {
@@ -131,7 +129,6 @@ article {
     align-items: center;
     justify-content: center;
     margin-bottom: 3px;
-    height: 4em;
 
     .tecnologias-lista {
       display: flex;
