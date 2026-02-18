@@ -1,19 +1,5 @@
 {
   "proyect1": {
-    "key": 1,
-    "name": "Ascenso Real (TFG)",
-    "estado": "En proceso",
-    "tecnology": {
-      "front": ["React", "Kotlin"],
-      "back": ["NodeJS + Express"]
-    },
-    "about": "Juego en el que un Peón quiere llegar a ser algo más que un simple peón, teniendo que superar diferentes pruebas que le ponen otras piezas.",
-    "links": {
-      "front": "https://github.com/TFG-DAM-G1/front.git",
-      "back": "https://github.com/TFG-DAM-G1/back.git"
-    }
-  },
-  "proyect2": {
     "key": 2,
     "name": "Dashboard del Titanic",
     "estado": "Desplegado",
@@ -26,7 +12,7 @@
       "demo": "https://dashboard-titanic-react-iei5.vercel.app/"
     }
   },
-  "proyect3": {
+  "proyect2": {
     "key": 3,
     "name": "Tienda de cómics",
     "estado": "Terminado con implementaciones futuras",
